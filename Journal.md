@@ -13,3 +13,9 @@ if/else statement when you want to add a new state.
 Phase 3
 In this phase I extended the program by adding the Sleeping class, but did not have to modify any of the other existing
 classes.
+
+Phase 4
+Using the State pattern is more extensible for professional software, but the conditional logic seemed simpler at first
+and easier to follow. The State pattern seems harder to follow since it has methods and variables being passed from the 
+SentinelGuard class to the State classes, but it will be easier to manage in the long run as it grows with new states 
+added.
