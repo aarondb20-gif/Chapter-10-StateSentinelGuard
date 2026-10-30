@@ -1,3 +1,5 @@
+import javax.xml.transform.Source;
+
 public class Main {
     public static void main(String[] args) {
         //SentinelGuard guard = new SentinelGuard(SentinelGuard.State.IDLE);
@@ -7,6 +9,13 @@ public class Main {
         guard.hearNoise();
         guard.seeEnemy();
         guard.loseTarget();
+
+        System.out.println();
+        guard.setState(new SleepingState());
+        guard.seeEnemy();
+        guard.loseTarget();
+        guard.hearNoise();
+        guard.seeEnemy();
 
     }
 }
